@@ -7,9 +7,6 @@ pipeline {
             }
         }
 		stage('Test') { 
-			agent {
-				label "slave1"
-			}
 			steps {
                 echo 'This stage will be executed first.'
 				build "test"
