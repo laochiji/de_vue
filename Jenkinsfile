@@ -43,7 +43,7 @@ pipeline {
                     }
                     steps {
                         echo "On Branch B"
-						build job: 'test3'
+						build job: 'test'
                     }
                 }
             }
