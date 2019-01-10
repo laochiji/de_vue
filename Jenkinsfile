@@ -25,7 +25,7 @@ pipeline {
                     }
                     steps {
                         echo "On Branch A"
-						build "test1"
+						build job: 'test1'
                     }
                 }
                 stage('build2') {
@@ -34,7 +34,7 @@ pipeline {
                     }
                     steps {
                         echo "On Branch B"
-						build "test2"
+						build job: 'test2'
                     }
                 }
 				stage('build3') {
@@ -43,7 +43,7 @@ pipeline {
                     }
                     steps {
                         echo "On Branch B"
-						build "test"
+						build job: 'test3'
                     }
                 }
             }
