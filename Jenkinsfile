@@ -12,7 +12,7 @@ pipeline {
 			}
 			steps {
                 echo 'This stage will be executed first.'
-				build "test"
+			
             }	
 		}
         stage('Parallel Stage') {
@@ -20,7 +20,7 @@ pipeline {
                 stage('build1') {
                     steps {
                         echo "On Branch A"
-						build "test1"
+					
                     }
                 }
                 stage('build2') {
@@ -29,7 +29,7 @@ pipeline {
                     }
                     steps {
                         echo "On Branch B"
-						build "test2"
+					
                     }
                 }
 				stage('build3') {
@@ -38,7 +38,7 @@ pipeline {
                     }
                     steps {
                         echo "On Branch B"
-						build "test"
+				
                     }
                 }
             }
